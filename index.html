@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DORXWEA TATTOO</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">DORXWEA TATTOO</a>
+      
+      <!-- Ссылки по центру -->
+      <nav class="nav-links">
+        <a href="about.html" class="nav-link" data-i18n="navAbout">O mnie</a>
+        <a href="works.html" class="nav-link" data-i18n="navPortfolio">Portfolio</a>
+        <a href="reviews.html" class="nav-link" data-i18n="navReviews">Opinie</a>
+      </nav>
+
+      <!-- Языки справа -->
+      <div class="lang-switcher">
+        <button class="lang-btn active" onclick="setLang('pl')">PL</button>
+        <button class="lang-btn" onclick="setLang('ru')">RU</button>
+        <button class="lang-btn" onclick="setLang('ua')">UA</button>
+        <button class="lang-btn" onclick="setLang('en')">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container page-content">
+    <section class="hero" style="text-align: center; padding: 60px 0;">
+      <h1 style="font-size: 48px; margin-bottom: 20px;">DORXWEA TATTOO STUDIO</h1>
+      <a href="#booking" class="btn btn-primary" data-i18n="btnBook">Zapisz się na sesję</a>
+    </section>
+
+    <!-- Форма записи с отправкой в ТГ -->
+    <section id="booking" class="booking-wrapper" style="max-width: 600px; margin: 0 auto; background: var(--card-bg); padding: 30px; border-radius: 20px;">
+      <h2 style="margin-bottom: 20px; text-align: center;" data-i18n="formTitle">Zapisz się na sesję</h2>
+
+      <form id="cloudflareBookingForm">
+        <div style="margin-bottom: 15px;">
+          <label data-i18n="labelName">Twoje Imię *</label>
+          <input type="text" id="name" required style="width:100%; padding: 12px; background:#111; border:1px solid #333; color:#fff; border-radius:8px;">
+        </div>
+
+        <div style="margin-bottom: 15px;">
+          <label data-i18n="labelContact">Kontakt (Telegram / Inst / Phone) *</label>
+          <input type="text" id="contact" required style="width:100%; padding: 12px; background:#111; border:1px solid #333; color:#fff; border-radius:8px;">
+        </div>
+
+        <div style="margin-bottom: 15px;">
+          <label data-i18n="labelIdea">Opis pomysłu</label>
+          <textarea id="idea" rows="4" style="width:100%; padding: 12px; background:#111; border:1px solid #333; color:#fff; border-radius:8px;"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-full" id="submitBtn" data-i18n="btnSend">Wyślij zgłoszenie</button>
+        <div id="statusMessage" style="margin-top:15px; text-align:center;"></div>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
