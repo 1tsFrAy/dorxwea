@@ -3,18 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DORXWEA TATTOO — Studio & Visual Art</title>
+  <title>DORXWEA TATTOO</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✦</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Навигация -->
+  <!-- Шапка -->
   <header class="navbar">
-    <a href="index.html" class="logo">DORXWEA<span>✦</span>TATTOO</a>
+    <a href="index.html" class="logo">DORXWEA<span>.TATTOO</span></a>
     
     <nav class="nav-links" id="navLinks">
       <a href="#about" data-i18n="navAbout">O mnie</a>
@@ -23,7 +22,7 @@
       <a href="#booking" class="btn-nav" data-i18n="navBook">Zapisz się</a>
     </nav>
 
-    <!-- Переключатель языков -->
+    <!-- Выбор языка (PL главный) -->
     <div class="lang-switch">
       <button class="lang-btn active" data-lang="pl">PL</button>
       <button class="lang-btn" data-lang="ru">RU</button>
@@ -36,116 +35,114 @@
     </button>
   </header>
 
-  <!-- Главный баннер -->
+  <!-- Hero Banner -->
   <section class="hero">
+    <div class="hero-glow"></div>
     <div class="hero-content">
-      <span class="subtitle" data-i18n="heroSubtitle">Tattoo Artist & Visual Creator</span>
-      <h1 class="gradient-text" data-i18n="heroTitle">Unikalne tatuaże z charakterem</h1>
-      <p data-i18n="heroDesc">Tworzę autorskie projekty dopasowane do Twojej anatomii. Wysoka jakość, pełna sterylność i dbałość o detale.</p>
+      <span class="subtitle" data-i18n="heroSubtitle">✦ Premium Tattoo Artist ✦</span>
+      <h1 class="gradient-text" data-i18n="heroTitle">Sztuka na Twojej skórze</h1>
+      <p data-i18n="heroDesc">Unikalne projekty dopasowane do Twojego ciała. Bezpieczeństwo, sterylność i dbałość o każdy detal.</p>
       <div class="hero-btns">
         <a href="works.html" class="btn btn-primary" data-i18n="btnWorks">Zobacz prace</a>
-        <a href="#booking" class="btn btn-secondary" data-i18n="btnBook">Zapisz się na sesję</a>
+        <a href="#booking" class="btn btn-secondary" data-i18n="btnBook">Zarezerwuj sesję</a>
       </div>
     </div>
   </section>
 
   <!-- О себе -->
-  <section id="about" class="section about-section">
+  <section id="about" class="section">
     <div class="container">
-      <h2 class="gradient-text" data-i18n="aboutTitle">O mnie</h2>
-      <p class="about-text" data-i18n="aboutText">
-        Cześć! Jestem Dorxwea. Tatuaż to dla mnie coś więcej niż rysunek na skórze — to forma wyrażenia siebie i Twojej estetyki. Tworzę autorskie projekty oraz realizuję pomysły klientów w atmosferze pełnego komfortu i bezpieczeństwa.
-      </p>
+      <h2 class="section-title gradient-text" data-i18n="aboutTitle">O mnie</h2>
+      <div class="about-card glow-box">
+        <p class="about-text" data-i18n="aboutText">
+          Cześć! Jestem DORXWEA. Tatuaż to dla mnie połączenie sztuki i wyrażania siebie. Tworzę autorskie wzory oraz realizuję indywidualne pomysły klientów z dbałością o najwyższą jakość.
+        </p>
+      </div>
     </div>
   </section>
 
   <!-- Услуги -->
   <section id="services" class="section">
     <div class="container">
-      <h2 class="gradient-text" data-i18n="servicesTitle">Usługi</h2>
+      <h2 class="section-title gradient-text" data-i18n="servicesTitle">Usługi</h2>
       <div class="cards-grid">
-        <div class="card">
+        <div class="card glow-box">
           <div class="card-icon">🎨</div>
-          <h3 data-i18n="card1Title">Swoja tatuaż / Custom</h3>
-          <p data-i18n="card1Desc">Projekt indywidualny stworzony na podstawie Twojego pomysłu, referencji i budowy ciała.</p>
+          <h3 data-i18n="srv1Title">Custom Tattoo</h3>
+          <p data-i18n="srv1Desc">Indywidualny projekt stworzony specjalnie dla Ciebie na podstawie Twoich pomysłów.</p>
         </div>
-        <div class="card">
+        <div class="card glow-box">
           <div class="card-icon">📸</div>
-          <h3 data-i18n="card2Title">Modelka (-80% zniżki)</h3>
-          <p data-i18n="card2Desc">Specjalne warunki i rabat 80% na realizację moich autorskich, dużych pomysłów.</p>
+          <h3 data-i18n="srv2Title">Model (80% zniżki)</h3>
+          <p data-i18n="srv2Desc">Zostań moją modelką/modelem do realizacji moich autorskich pomysłów z rabatem 80%!</p>
         </div>
-        <div class="card">
+        <div class="card glow-box">
           <div class="card-icon">⚡️</div>
-          <h3 data-i18n="card3Title">Szkice / Flash</h3>
-          <p data-i18n="card3Desc">Gotowe autorskie wzory dostępne do wykonania od ręki bez długiego oczekiwania.</p>
+          <h3 data-i18n="srv3Title">Szkice & Wolne wzory</h3>
+          <p data-i18n="srv3Desc">Gotowe wzory autorskie dostępne do wykonania od ręki.</p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Баннер акция для моделей -->
-  <section class="model-banner">
-    <div class="container">
-      <div class="model-card">
-        <div class="model-content">
-          <span class="model-badge" data-i18n="modelBannerBadge">🔥 Oferta Specjalna</span>
-          <h2 data-i18n="modelBannerTitle">Szukam modeli z rabatem 80%! 📸</h2>
-          <p data-i18n="modelBannerDesc">Zostań moją modelką/modelem do realizacji moich autorskich wizji i zgarnij <b>80% zniżki</b> na całą sesję!</p>
-        </div>
-        <a href="#booking" class="btn btn-primary btn-model" data-i18n="modelBannerBtn">Chcę zostać modelem</a>
       </div>
     </div>
   </section>
 
   <!-- Форма записи -->
-  <section id="booking" class="section booking-section">
+  <section id="booking" class="section">
     <div class="container">
-      <div class="booking-card">
-        <h2 class="gradient-text" data-i18n="bookingTitle">Zapisz się na sesję</h2>
-        <p data-i18n="bookingDesc">Wypełnij formularz, a skontaktuję się z Tobą w celu omówienia pomysłu i terminu.</p>
+      <div class="booking-card glow-box">
+        <h2 class="section-title gradient-text" data-i18n="bookingTitle">Formularz Zgłoszeniowy</h2>
+        <p class="booking-subtitle" data-i18n="bookingDesc">Wypełnij formularz, aby skonsultować się lub zarezerwować termin.</p>
         
         <form id="bookingForm">
+          <!-- Имя -->
           <div class="form-group">
-            <input type="text" id="name" data-i18n-ph="namePlaceholder" placeholder="Twoje imię" required>
+            <label data-i18n="lblName">Twoje imię *</label>
+            <input type="text" id="name" required placeholder="np. Jan" data-i18n-ph="phName">
           </div>
+
+          <!-- Контакт -->
           <div class="form-group">
-            <input type="text" id="contact" data-i18n-ph="contactPlaceholder" placeholder="Instagram / Telegram / Telefon" required>
+            <label data-i18n="lblContact">Instagram / Telegram / Telefon *</label>
+            <input type="text" id="contact" required placeholder="@username lub numer telefonu" data-i18n-ph="phContact">
           </div>
+
+          <!-- Тип услуги -->
           <div class="form-group">
-            <select id="service" required>
-              <option value="" disabled selected data-i18n="servicePlaceholder">Wybierz opcję</option>
-              <option value="Custom">Swoja tatuaż / Custom</option>
-              <option value="Model">Modelka (-80% zniżki)</option>
-              <option value="Flash">Gotowy szkic / Flash</option>
-              <option value="Consultation">Konsultacja</option>
+            <label data-i18n="lblService">Typ usługi *</label>
+            <select id="serviceSelect" required>
+              <option value="custom" data-i18n="optCustom">Swoja tatuaż (Custom)</option>
+              <option value="model" data-i18n="optModel">Model (80% zniżki)</option>
+              <option value="flash" data-i18n="optFlash">Szkic / Wolny wzór</option>
+              <option value="consultation" data-i18n="optConsultation">Konsultacja</option>
             </select>
           </div>
 
-          <!-- Динамическая часть для размера и ориентировочной цены -->
-          <div id="priceGroup" class="form-group-dynamic">
-            <div class="form-group">
-              <select id="sizePrice">
-                <option value="Маленькая (до 7 см) ~ от 200 PLN">Mala (~ do 7 cm) — od 200 PLN</option>
-                <option value="Средняя (7-15 см) ~ от 350 PLN">Średnia (7-15 cm) — od 350 PLN</option>
-                <option value="Большая (15-25 см) ~ от 600 PLN">Duża (15-25 cm) — od 600 PLN</option>
-                <option value="Масштабный проект (рукав/спина)">Projekt duży (rękaw/plecy) — cenie indywidualnej</option>
-              </select>
-            </div>
-            <p class="price-hint" data-i18n="priceHint">*Ostateczną cenę ustala mistrz po omówieniu szczegółów.</p>
+          <!-- Размер и примерная цена (скрывается при консультации) -->
+          <div class="form-group" id="priceGroup">
+            <label data-i18n="lblPrice">Orientacyjny rozmiar i cena</label>
+            <select id="sizePriceSelect">
+              <option value="small" data-i18n="optPrice1">Mały (do 5cm) — od 200 PLN</option>
+              <option value="medium" selected data-i18n="optPrice2">Średni (5-15cm) — od 400 PLN</option>
+              <option value="large" data-i18n="optPrice3">Duży (15cm+) — od 700 PLN</option>
+              <option value="sleeve" data-i18n="optPrice4">Cała sesja / Rękaw — od 1200 PLN</option>
+            </select>
+            <small class="price-hint" data-i18n="priceHint">*Ostateczną cenę ustala tatuażysta po omówieniu szczegółów.</small>
           </div>
 
+          <!-- Описание идеи -->
           <div class="form-group">
-            <textarea id="comment" rows="4" data-i18n-ph="commentPlaceholder" placeholder="Opisz pomysł, miejsce na ciele oraz preferowany termin..."></textarea>
+            <label data-i18n="lblComment">Opis pomysłu, miejsce na ciele, uwagi</label>
+            <textarea id="comment" rows="4" placeholder="Opisz swój pomysł..." data-i18n-ph="phComment"></textarea>
           </div>
 
-          <div class="rodo-notice">
+          <!-- RODO Checkbox -->
+          <div class="rodo-group">
             <label>
               <input type="checkbox" id="rodoCheck" required checked>
               <span data-i18n="rodoNotice">Zgadzam się na przetwarzanie danych osobowych (RODO).</span>
             </label>
           </div>
 
-          <button type="submit" class="btn btn-primary btn-block" id="submitBtn" data-i18n="submitBtn">Wyślij zgłoszenie</button>
+          <button type="submit" class="btn btn-primary btn-block glow-btn" id="submitBtn" data-i18n="btnSubmit">Wyślij zgłoszenie</button>
           <div id="formStatus" class="form-status"></div>
         </form>
       </div>
@@ -154,17 +151,7 @@
 
   <footer>
     <p>© DORXWEA TATTOO. All rights reserved.</p>
-    <p><a href="#" id="privacyBtn" class="privacy-link" data-i18n="privacyLink">Polityka Prywatności (RODO)</a></p>
   </footer>
-
-  <!-- Модалка RODO -->
-  <div id="privacyModal" class="modal">
-    <div class="modal-content-wrapper privacy-card">
-      <span class="modal-close" id="privacyClose">&times;</span>
-      <h3 class="gradient-text" data-i18n="privacyTitle">Polityka prywatności</h3>
-      <p id="privacyText" data-i18n="privacyText"></p>
-    </div>
-  </div>
 
   <script src="script.js"></script>
 </body>
