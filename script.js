@@ -1,7 +1,7 @@
 // ===== НАСТРОЙКИ — заполните =====
 const CFG = {
   API: "https://cold-bar-d3fcfray.hbhhbvv988.workers.dev", // адрес Cloudflare Worker
-  IG: "https://www.instagram.com/dorx_tattoo",
+  IG: "https://www.instagram.com/dorx_tattoo/",
   TG: "https://t.me/hwsos"
 };
 document.addEventListener('DOMContentLoaded', () => {
@@ -197,10 +197,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- ДОПОЛНЕНИЯ / ПРАВКИ ТЕКСТОВ (меняйте здесь) ---
   const extra = {
-    pl: { modelBannerDesc:"Zostań moim modelem przy realizacji większych pomysłów i otrzymaj zniżkę 80% na sesję!", card2Desc:"Zniżka 80% przy realizacji moich większych pomysłów.", card3Title:"Szkice", card4Title:"Konsultacja", card4Desc:"Omówmy pomysł, rozmiar i miejsce na ciele, zanim zaczniemy.", portfolioDesc:"Moje prace i gotowe szkice.", tabSketch:"Szkice", tabWork:"Moje prace", tOwn:"Własny projekt", tModel:"Model (−80%)", tSketch:"Szkic", tCons:"Konsultacja", from:"od", placePh:"Miejsce na ciele", commentPlaceholder:"Opisz swój pomysł...", note:"Tylko 18+. Cenę końcową ustala mistrz.", rights:"Wszelkie prawa zastrzeżone.", revTitle:"Opinie" },
-    ru: { modelBannerDesc:"Стань моей моделью для масштабных задумок и получи скидку 80% на сеанс!", card2Desc:"Скидка 80% на реализацию моих личных масштабных задумок.", card3Title:"Эскизы", card4Title:"Консультация", card4Desc:"Обсудим идею, размер и место на теле до начала работы.", portfolioDesc:"Мои работы и готовые эскизы.", tabSketch:"Эскизы", tabWork:"Мои работы", tOwn:"Своя татуировка", tModel:"Модель (−80%)", tSketch:"Эскиз", tCons:"Консультация", from:"от", placePh:"Место на теле", commentPlaceholder:"Опишите вашу идею...", note:"Только 18+. Итоговую цену назовёт мастер.", rights:"Все права защищены.", revTitle:"Отзывы" },
-    ua: { modelBannerDesc:"Стань моєю моделлю для масштабних задумів і отримай знижку 80% на сеанс!", card2Desc:"Знижка 80% на реалізацію моїх особистих масштабних задумів.", card3Title:"Ескізи", card4Title:"Консультація", card4Desc:"Обговоримо ідею, розмір і місце на тілі до початку роботи.", portfolioDesc:"Мої роботи та готові ескізи.", tabSketch:"Ескізи", tabWork:"Мої роботи", tOwn:"Власне тату", tModel:"Модель (−80%)", tSketch:"Ескіз", tCons:"Консультація", from:"від", placePh:"Місце на тілі", commentPlaceholder:"Опишіть вашу ідею...", note:"Лише 18+. Остаточну ціну назве майстер.", rights:"Усі права захищено.", revTitle:"Відгуки" },
-    en: { modelBannerDesc:"Be my model for bigger projects and get 80% off your session!", card2Desc:"80% off for realizing my own large-scale ideas.", card3Title:"Sketches", card4Title:"Consultation", card4Desc:"We discuss the idea, size and placement before we start.", portfolioDesc:"My works and ready-made sketches.", tabSketch:"Sketches", tabWork:"My works", tOwn:"My own design", tModel:"Model (−80%)", tSketch:"Sketch", tCons:"Consultation", from:"from", placePh:"Placement on body", commentPlaceholder:"Describe your idea...", note:"18+ only. The artist sets the final price.", rights:"All rights reserved.", revTitle:"Reviews" }
+    pl: { modelBannerDesc:"Zostań moim modelem przy realizacji większych pomysłów i otrzymaj zniżkę 80% na sesję!", card2Desc:"Zniżka 80% przy realizacji moich większych pomysłów.", card3Title:"Szkice", card4Title:"Konsultacja", card4Desc:"Omówmy pomysł, rozmiar i miejsce na ciele, zanim zaczniemy.", portfolioDesc:"Moje prace i gotowe szkice.", tabSketch:"Szkice", tabWork:"Moje prace", tOwn:"Własny projekt", tModel:"Model (−80%)", tSketch:"Szkic", tCons:"Konsultacja", from:"od", placePh:"Miejsce na ciele", commentPlaceholder:"Opisz swój pomysł...", note:"Tylko 18+. Cenę końcową ustala mistrz.", rights:"Wszelkie prawa zastrzeżone.", revTitle:"Opinie", attach:"Zobacz załączniki", hideAtt:"Ukryj załączniki" },
+    ru: { modelBannerDesc:"Стань моей моделью для масштабных задумок и получи скидку 80% на сеанс!", card2Desc:"Скидка 80% на реализацию моих личных масштабных задумок.", card3Title:"Эскизы", card4Title:"Консультация", card4Desc:"Обсудим идею, размер и место на теле до начала работы.", portfolioDesc:"Мои работы и готовые эскизы.", tabSketch:"Эскизы", tabWork:"Мои работы", tOwn:"Своя татуировка", tModel:"Модель (−80%)", tSketch:"Эскиз", tCons:"Консультация", from:"от", placePh:"Место на теле", commentPlaceholder:"Опишите вашу идею...", note:"Только 18+. Итоговую цену назовёт мастер.", rights:"Все права защищены.", revTitle:"Отзывы", attach:"Посмотреть вложения", hideAtt:"Скрыть вложения" },
+    ua: { modelBannerDesc:"Стань моєю моделлю для масштабних задумів і отримай знижку 80% на сеанс!", card2Desc:"Знижка 80% на реалізацію моїх особистих масштабних задумів.", card3Title:"Ескізи", card4Title:"Консультація", card4Desc:"Обговоримо ідею, розмір і місце на тілі до початку роботи.", portfolioDesc:"Мої роботи та готові ескізи.", tabSketch:"Ескізи", tabWork:"Мої роботи", tOwn:"Власне тату", tModel:"Модель (−80%)", tSketch:"Ескіз", tCons:"Консультація", from:"від", placePh:"Місце на тілі", commentPlaceholder:"Опишіть вашу ідею...", note:"Лише 18+. Остаточну ціну назве майстер.", rights:"Усі права захищено.", revTitle:"Відгуки", attach:"Переглянути вкладення", hideAtt:"Сховати вкладення" },
+    en: { modelBannerDesc:"Be my model for bigger projects and get 80% off your session!", card2Desc:"80% off for realizing my own large-scale ideas.", card3Title:"Sketches", card4Title:"Consultation", card4Desc:"We discuss the idea, size and placement before we start.", portfolioDesc:"My works and ready-made sketches.", tabSketch:"Sketches", tabWork:"My works", tOwn:"My own design", tModel:"Model (−80%)", tSketch:"Sketch", tCons:"Consultation", from:"from", placePh:"Placement on body", commentPlaceholder:"Describe your idea...", note:"18+ only. The artist sets the final price.", rights:"All rights reserved.", revTitle:"Reviews", attach:"View attachments", hideAtt:"Hide attachments" }
   };
   for (const l in extra) Object.assign(translations[l], extra[l]);
   delete translations.de;
@@ -306,12 +306,20 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --- 5. ОТЗЫВЫ (главная) ---
-  if ($('reviews')) fetch(CFG.API + '/api/reviews').then(r => r.json()).then(x => {
-    if (!x.length) return;
-    $('reviews').innerHTML = x.map(r => `<div class="card review"><h3>${esc(r.a)}</h3><p>${esc(r.t)}</p></div>`).join('');
-    $('reviewsSec').style.display = '';
-  }).catch(() => {});
+  let revs = [];
+  function drawReviews() {
+    const box = $('reviews'); if (!box) return;
+    box.innerHTML = revs.map(r => `<div class="card review">${r.r ? `<div class="stars" aria-label="${r.r}/5">${'✦'.repeat(r.r)}<span>${'✦'.repeat(5 - r.r)}</span></div>` : ''}<h3>${esc(r.a)}</h3><p>${esc(r.t)}</p>${r.n ? `<button class="att-btn" data-id="${esc(r.id)}" data-n="${r.n}">📎 ${tr('attach')} (${r.n})</button><div class="att" hidden></div>` : ''}</div>`).join('');
+    $('reviewsSec').style.display = revs.length ? '' : 'none';
+    box.querySelectorAll('.att-btn').forEach(b => b.addEventListener('click', () => {
+      const w = b.nextElementSibling;
+      if (!w.childElementCount) for (let i = 0; i < +b.dataset.n; i++) w.insertAdjacentHTML('beforeend', `<a href="${CFG.API}/rphoto/${b.dataset.id}/${i}" target="_blank" rel="noopener"><img loading="lazy" src="${CFG.API}/rphoto/${b.dataset.id}/${i}" alt=""></a>`);
+      w.hidden = !w.hidden;
+      b.textContent = `📎 ${tr(w.hidden ? 'attach' : 'hideAtt')} (${b.dataset.n})`;
+    }));
+  }
+  if ($('reviews')) fetch(CFG.API + '/api/reviews').then(r => r.json()).then(x => { revs = x; drawReviews(); }).catch(() => {});
 
-  window.onLangChange = () => { fillSizes(); drawGallery(); };
+  window.onLangChange = () => { fillSizes(); drawGallery(); drawReviews(); };
   window.onLangChange();
 });
