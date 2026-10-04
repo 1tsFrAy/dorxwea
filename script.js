@@ -1,7 +1,7 @@
 // ===== НАСТРОЙКИ — заполните =====
 const CFG = {
   API: "https://cold-bar-d3fcfray.hbhhbvv988.workers.dev", // адрес Cloudflare Worker
-  IG: "https://www.instagram.com/dorx_tattoo/?utm_source=ig_web_button_share_sheet",
+  IG: "https://www.instagram.com/dorx_tattoo",
   TG: "https://t.me/hwsos"
 };
 document.addEventListener('DOMContentLoaded', () => {
