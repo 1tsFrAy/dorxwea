@@ -1,8 +1,8 @@
 // ===== НАСТРОЙКИ — заполните =====
 const CFG = {
-  API: "https://YOUR-WORKER.YOUR-SUBDOMAIN.workers.dev", // адрес Cloudflare Worker
-  IG: "https://instagram.com/YOUR_INSTAGRAM",
-  TG: "https://t.me/YOUR_TELEGRAM"
+  API: "https://cold-bar-d3fcfray.hbhhbvv988.workers.dev/", // адрес Cloudflare Worker
+  IG: "https://www.instagram.com/dorx_tattoo/?utm_source=ig_web_button_share_sheet",
+  TG: "https://t.me/hwsos"
 };
 document.addEventListener('DOMContentLoaded', () => {
 
