@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DORXWEA TATTOO — tatuaże Jelenia Góra</title><link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✦</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet"><meta name="description" content="Autorskie tatuaże i szkice w Jeleniej Górze. Umów się przez formularz.">
+<meta property="og:type" content="website"><meta property="og:site_name" content="DORXWEA TATTOO"><meta property="og:title" content="DORXWEA TATTOO — Jelenia Góra"><meta property="og:description" content="Autorskie tatuaże i szkice w Jeleniej Górze. Umów się przez formularz."><meta property="og:image" content="https://1tsfray.github.io/dorxwea/og.png"><meta property="og:url" content="https://1tsfray.github.io/dorxwea/"><meta name="twitter:card" content="summary_large_image">
+</head><body>
+<header class="navbar">
+<a href="index.html" class="logo">DORXWEA<span>✦</span></a>
+<nav class="nav-links" id="navLinks">
+<a href="about.html" data-i18n="navAbout"></a>
+<a href="index.html#services" data-i18n="navServices"></a>
+<a href="works.html" class="highlight-link" data-i18n="navPortfolio"></a>
+<a href="index.html#booking" class="btn-nav" data-i18n="navBook"></a>
+</nav>
+<div class="lang-switch"><button class="lang-btn" data-lang="pl">PL</button><button class="lang-btn" data-lang="ru">RU</button><button class="lang-btn" data-lang="ua">UA</button><button class="lang-btn" data-lang="en">EN</button></div>
+<button class="burger" id="burgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+</header>
+<section class="hero"><div class="hero-content"><span class="subtitle" data-i18n="heroSubtitle"></span><h1 data-i18n="heroTitle"></h1><p data-i18n="heroDesc"></p>
+<div class="hero-btns"><a href="works.html" class="btn btn-secondary" data-i18n="btnWorks"></a><a href="#booking" class="btn btn-primary" data-i18n="btnBook"></a></div></div></section>
+<section id="services" class="section"><div class="container"><h2 data-i18n="servicesTitle"></h2><div class="cards-grid"><div class="card"><div class="card-icon">🎨</div><h3 data-i18n="card1Title"></h3><p data-i18n="card1Desc"></p></div><div class="card"><div class="card-icon">📸</div><h3 data-i18n="card2Title"></h3><p data-i18n="card2Desc"></p></div><div class="card"><div class="card-icon">⚡️</div><h3 data-i18n="card3Title"></h3><p data-i18n="card3Desc"></p></div><div class="card"><div class="card-icon">💬</div><h3 data-i18n="card4Title"></h3><p data-i18n="card4Desc"></p></div></div></div></section>
+<section class="model-banner"><div class="container"><div class="model-card"><div class="model-content"><span class="model-badge" data-i18n="modelBannerBadge"></span><h2 data-i18n="modelBannerTitle"></h2><p data-i18n="modelBannerDesc"></p></div><a href="#booking" class="btn btn-primary btn-model" data-i18n="modelBannerBtn"></a></div></div></section>
+<section id="booking" class="section booking-section"><div class="container"><div class="booking-card"><h2 data-i18n="bookingTitle"></h2><p data-i18n="bookingDesc" style="margin-bottom:20px;color:var(--text-secondary);text-align:center"></p>
+<form id="bookingForm">
+<div class="form-group"><input type="text" id="name" data-i18n-ph="namePlaceholder" maxlength="100" required></div>
+<div class="form-group"><input type="text" id="contact" data-i18n-ph="contactPlaceholder" maxlength="100" required></div>
+<div class="form-group"><select id="service" required><option value="" disabled selected data-i18n="servicePlaceholder"></option><option value="own" data-i18n="tOwn"></option><option value="model" data-i18n="tModel"></option><option value="sketch" data-i18n="tSketch"></option><option value="consultation" data-i18n="tCons"></option></select></div>
+<div class="form-group" id="sizeRow"><select id="size" aria-label="Size"></select></div>
+<div class="form-group"><textarea id="comment" rows="4" maxlength="1500" data-i18n-ph="commentPlaceholder"></textarea></div>
+<div class="form-group"><input type="text" id="place" maxlength="100" data-i18n-ph="placePh"></div>
+<input class="hp" id="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+<div class="rodo-notice"><label><input type="checkbox" id="rodoCheck" required><span><span data-i18n="rodoNotice"></span> <a href="rodo.html" class="privacy-link" data-i18n="privacyLink"></a></span></label></div>
+<p class="note" data-i18n="note"></p>
+<button type="submit" class="btn btn-primary btn-block" id="submitBtn" data-i18n="submitBtn"></button>
+<div id="formStatus" class="form-status" role="status"></div></form></div></div></section>
+<section class="section" id="reviewsSec" style="display:none"><div class="container"><h2 data-i18n="revTitle"></h2><div class="cards-grid" id="reviews"></div></div></section>
+<footer><p>© <span id="yr"></span> DORXWEA TATTOO · Jelenia Góra. <span data-i18n="rights"></span></p>
+<p><a href="rodo.html" class="privacy-link" data-i18n="privacyLink"></a> · <a class="privacy-link" data-link="IG" target="_blank" rel="noopener">Instagram</a> · <a class="privacy-link" data-link="TG" target="_blank" rel="noopener">Telegram</a></p></footer>
+<script src="script.js?v=3"></script></body></html>
